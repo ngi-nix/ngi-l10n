@@ -10,11 +10,14 @@
 (system: let
   pkgs = nixpkgs.legacyPackages.${system};
   lib = pkgs.lib;
-  deps = with pkgs; [
+  buildInputs = with pkgs; [
             cargo
             rustc
             rustfmt
         ];
+  shellInputs = with pkgs; [
+    just
+  ];
   packageName = "mdbook";
   src = pkgs.nix-gitignore.gitignoreSource [] mdbook;
 in 
@@ -30,7 +33,7 @@ in
         defaultPackage = self.packages.${system}.${packageName};
 
         devShell = pkgs.mkShell {
-          buildInputs = deps;
+          buildInputs = buildInputs ++ shellInputs;
         };
   });
 }
