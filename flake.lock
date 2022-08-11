@@ -1,0 +1,57 @@
+{
+  "nodes": {
+    "flake-utils": {
+      "locked": {
+        "lastModified": 1659877975,
+        "narHash": "sha256-zllb8aq3YO3h8B/U0/J1WBgAL8EX5yWf5pMj3G0NAmc=",
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "rev": "c0e246b9b83f637f4681389ecabcb2681b4f3af0",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "type": "github"
+      }
+    },
+    "mdbook": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1591027194,
+        "narHash": "sha256-9ZZ1HacjifedglnAg8UgOR+0hjVXBPI79+cFa92ewfw=",
+        "owner": "XAMPPRocky",
+        "repo": "mdBook",
+        "rev": "536cd8818f5e9a47b3b789d6175172295839b8ee",
+        "type": "github"
+      },
+      "original": {
+        "owner": "XAMPPRocky",
+        "ref": "fluent",
+        "repo": "mdBook",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 0,
+        "narHash": "sha256-HBcM19nGhI3IWwPNVlYb0MZ8VW6iKp4JbAVkeIHVykc=",
+        "path": "/nix/store/5356r3f8pfz731rwcm1xrwaqqcbrq8gg-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flake-utils": "flake-utils",
+        "mdbook": "mdbook",
+        "nixpkgs": "nixpkgs"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
