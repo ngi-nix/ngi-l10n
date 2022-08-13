@@ -14,7 +14,7 @@ Implementation:
     - [x] Basic integration
     - [x] Multiline strings
     - [ ] Separation of `.ftl` files to correspond to mdBook chapters
-    - [ ] Translation validation based on authoritative source
+    - [ ] Translation validation based on authoritative source[^src]
       - [ ] Basic
       - [ ] Tiered
     - [ ] Diagram integration (e.g., GraphViz, Mermaid)
@@ -28,3 +28,5 @@ Notes:
 ## License
 
 This project is licensed under the terms of the [MIT license](LICENSE.md).
+
+[^src]: Monolingual base language
