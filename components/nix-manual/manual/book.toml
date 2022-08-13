@@ -1,3 +1,8 @@
+[book]
+language = "en"
+shared-locale-resources = ["locales/core.ftl"]
+multilingual = true
+
 [output.html]
 additional-css = ["custom.css"]
 additional-js = ["redirects.js"]

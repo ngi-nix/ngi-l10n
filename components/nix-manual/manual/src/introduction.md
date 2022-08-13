@@ -1,56 +1,14 @@
 # Introduction
 
-Nix is a _purely functional package manager_.  This means that it
-treats packages like values in purely functional programming languages
-such as Haskell — they are built by functions that don’t have
-side-effects, and they never change after they have been built.  Nix
-stores packages in the _Nix store_, usually the directory
-`/nix/store`, where each package has its own unique subdirectory such
-as
-
-    /nix/store/b6gvzjyb2pg0kjfwrjmg1vfhh54ad73z-firefox-33.1/
-
-where `b6gvzjyb2pg0…` is a unique identifier for the package that
-captures all its dependencies (it’s a cryptographic hash of the
-package’s build dependency graph).  This enables many powerful
-features.
+{{fluent "introduction"}}
 
 ## Multiple versions
 
-You can have multiple versions or variants of a package
-installed at the same time.  This is especially important when
-different applications have dependencies on different versions of the
-same package — it prevents the “DLL hell”.  Because of the hashing
-scheme, different versions of a package end up in different paths in
-the Nix store, so they don’t interfere with each other.
-
-An important consequence is that operations like upgrading or
-uninstalling an application cannot break other applications, since
-these operations never “destructively” update or delete files that are
-used by other packages.
+{{fluent "multiple-versions"}}
 
 ## Complete dependencies
 
-Nix helps you make sure that package dependency specifications are
-complete.  In general, when you’re making a package for a package
-management system like RPM, you have to specify for each package what
-its dependencies are, but there are no guarantees that this
-specification is complete.  If you forget a dependency, then the
-package will build and work correctly on _your_ machine if you have
-the dependency installed, but not on the end user's machine if it's
-not there.
-
-Since Nix on the other hand doesn’t install packages in “global”
-locations like `/usr/bin` but in package-specific directories, the
-risk of incomplete dependencies is greatly reduced.  This is because
-tools such as compilers don’t search in per-packages directories such
-as `/nix/store/5lbfaxb722zp…-openssl-0.9.8d/include`, so if a package
-builds correctly on your system, this is because you specified the
-dependency explicitly. This takes care of the build-time dependencies.
-
-Once a package is built, runtime dependencies are found by scanning
-binaries for the hash parts of Nix store paths (such as `r8vvq9kq…`).
-This sounds risky, but it works extremely well.
+{{fluent "complete-dependencies"}}
 
 ## Multi-user support
 
