@@ -1,14 +1,14 @@
 introduction = Nix ist ein _ausschliesslich funktionaler Packet Manager_.
 
-multiple-versions = aonetet
-  uentohuenth
-  aonethnte
-  euhnot
+# multiple-versions = aonetet
+#   uentohuenth
+#   aonethnte
+#   euhnot
 
-  enutohenth
+#   enutohenth
 
 
-  onteuhoenthu
+#   onteuhoenthu
 
 complete-dependencies = uentohu
   `netuhouneth`
