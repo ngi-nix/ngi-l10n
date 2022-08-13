@@ -18,7 +18,9 @@ Implementation:
       - [ ] Basic
       - [ ] Tiered
     - [ ] Diagram integration (e.g., GraphViz, Mermaid)
-    - [ ] [Weblate](https://weblate.org/)-hosted translations (portals: [project administration](https://hosted.weblate.org/project/ngi-l10n/), [community engagement](https://hosted.weblate.org/engage/ngi-l10n/))
+  - [o] [Weblate](https://weblate.org/)-hosted translations (portals: [project administration](https://hosted.weblate.org/project/ngi-l10n/), [community engagement](https://hosted.weblate.org/engage/ngi-l10n/))
+    - [x] Basic integration
+    - [ ] Multiline strings (failing check: `starting newline`)
 
 Notes:
 
