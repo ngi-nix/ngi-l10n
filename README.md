@@ -1,18 +1,29 @@
-# Localization Effort for the Nix Ecosystem
+# Localization (l10n) for the Nix Ecosystem
 
-This is an experimental project to understand the scope of potential localization efforts and implementations. The current implementation consists of [Fluent](https://projectfluent.org/) with support from the [Weblate](https://weblate.org/) project.
+This is an experimental project to understand the scope of potential localization implementations. Currently, each component within represents an independent proof-of-concept.
 
-Localization:
+## Components
 
-- The Nix manual (`components/nix-manual`)
+### Nix manual (`components/nix-manual`)
 
-## General Notes
+Implementation:
 
-### The Nix manual
+- [o] [mdBook](https://github.com/rust-lang/mdBook)
+  - [x] [Nix](https://github.com/NixOS/nix) [manual](https://nixos.org/manual/nix/stable/) content
+  - [o] [Fluent](https://projectfluent.org/) integration (related PR: [mdBook #1201](https://github.com/rust-lang/mdBook/pull/1201))
+    - [x] Basic integration
+    - [x] Multiline strings
+    - [ ] Translation validation based on authoritative source
+      - [ ] Basic
+      - [ ] Tiered
+    - [ ] Diagram integration (e.g., GraphViz, Mermaid)
+    - [ ] [Weblate](https://weblate.org/)-hosted translations (portals: [project administration](https://hosted.weblate.org/project/ngi-l10n/), [community engagement](https://hosted.weblate.org/engage/ngi-l10n/))
 
-- We are making use of a patch that integrates Fluent with [mdBook](https://github.com/rust-lang/mdBook).
+Notes:
+
 - The Nix manual includes some preprocessing steps that we are currently ignoring for the sake of simplicity.
+- For now, we render unordered lists in `.ftl` files by using hyphens (`-`); we presently have issues with asterisks (`*`).
 
-## Contributing translations
+## License
 
-Translations are hosted by Weblate. If you would like to contribute to the translation effort, please start by going to the [ngi-l10n Weblate project](https://hosted.weblate.org/engage/ngi-l10n/).
+This project is licensed under the terms of the [MIT license](LICENSE.md).
