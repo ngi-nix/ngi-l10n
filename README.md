@@ -13,6 +13,7 @@ Implementation:
   - [o] [Fluent](https://projectfluent.org/) integration (related PR: [mdBook #1201](https://github.com/rust-lang/mdBook/pull/1201))
     - [x] Basic integration
     - [x] Multiline strings
+    - [ ] Separation of `.ftl` files to correspond to mdBook chapters
     - [ ] Translation validation based on authoritative source
       - [ ] Basic
       - [ ] Tiered
