@@ -8,9 +8,9 @@ This is an experimental project to understand the scope of potential localizatio
 
 Implementation:
 
-- [o] [mdBook](https://github.com/rust-lang/mdBook)
+- [ ] [mdBook](https://github.com/rust-lang/mdBook)
   - [x] [Nix](https://github.com/NixOS/nix) [manual](https://nixos.org/manual/nix/stable/) content
-  - [o] [Fluent](https://projectfluent.org/) integration (related PR: [mdBook #1201](https://github.com/rust-lang/mdBook/pull/1201))
+  - [ ] [Fluent](https://projectfluent.org/) integration (related PR: [mdBook #1201](https://github.com/rust-lang/mdBook/pull/1201))
     - [x] Basic integration
     - [x] Multiline strings
     - [ ] Separation of `.ftl` files to correspond to mdBook chapters
@@ -18,7 +18,7 @@ Implementation:
       - [ ] Basic
       - [ ] Tiered
     - [ ] Diagram integration (e.g., GraphViz, Mermaid)
-  - [o] [Weblate](https://weblate.org/)-hosted translations (portals: [project administration](https://hosted.weblate.org/project/ngi-l10n/), [community engagement](https://hosted.weblate.org/engage/ngi-l10n/))
+  - [ ] [Weblate](https://weblate.org/)-hosted translations (portals: [project administration](https://hosted.weblate.org/project/ngi-l10n/), [community engagement](https://hosted.weblate.org/engage/ngi-l10n/))
     - [x] Basic integration
     - [ ] Multiline strings (failing check: `starting newline`)
 
