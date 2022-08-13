@@ -40,7 +40,7 @@ Contributing policy recommendations:
   - [ ] Machine-translated suggestions[^machine-translations]
   - [ ] Notification of invalidated strings
 
-[^machine-translations]: Machine translation is not yet accurate enough for full automation; the possibility of generating output with distorted meaning poses an unacceptable risk to readers of an official manual and any technical instructions presented within. Therefore, it is critical that machine translation be limited to suggestions. (Note: while project maintainers are unable to confirm accuracy of all human-contributed translations either, contributor codes of conduct foster a minimum level of accountability that brings greater assurance of accuracy than machines are presently capable of providing.)
+[^machine-translations]: Machine translation is not yet accurate enough for full automation; the possibility of generating output with distorted meaning poses an unacceptable risk to readers of an official manual (and any technical instructions presented therein). Therefore, it is critical that any machine-translation content be human-reviewed prior to submission. (Note: while project maintainers generally are unable to confirm accuracy of all human-contributed translations, contributor codes of conduct foster a minimum level of accountability that brings greater assurance of accuracy than machines are presently capable of providing.)
 
 #### Notes
 
