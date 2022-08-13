@@ -1,5 +1,5 @@
-/.direnv
+/.direnv/
 /result
 
-/book-example/book
-/components/nix-manual/manual/book
+/book-example/book/
+/components/nix-manual/manual/book/
